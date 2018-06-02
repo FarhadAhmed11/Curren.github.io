@@ -1,0 +1,471 @@
+/* .................GENERAL CODES.............
+........................................... */
+
+html, body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;    
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+h2 {
+    margin: 0 0 20px 0;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+section {
+    padding: 30px 0;
+}
+
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/* .................MAIN-HEADER.............
+........................................... */
+
+header {
+    position: absolute;
+    height: 80px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    transition: background-color 0.5s , color 0.5s ;
+}
+
+.main-logo {
+    display: inline;
+    position: absolute;
+    top: 25px;
+    left: 45%;
+    letter-spacing: 2px;
+    color: white;
+}
+
+.nav-bar {
+    margin: 20px 40px 0 0;
+    float: right;
+    padding: 0;
+}
+
+.fas::before {
+    display: block;
+    padding-bottom: 7px;
+}
+
+.nav-bar li {
+    display: inline-block;
+    text-align: center;
+    margin-left: 25px;
+    color: white;
+}
+
+.nav-bar li p {
+    margin: 0;
+    font-weight: 300;
+}
+
+.nav-bar li a {
+    transition: color 0.5s;
+}
+
+.nav-bar li a:hover {
+    color: rgb(247, 59, 59);
+}
+
+header:hover {
+    background-color: rgb(255, 255, 255);
+}
+
+header:hover > .main-logo {
+    color: rgb(247, 59, 59);
+}
+
+header:hover .nav-bar li {
+    color: black;
+}
+
+/* .................MAIN-VIEW.............
+........................................... */
+
+.main-view {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.37),rgba(0, 0, 0, 0.377)) ,url(main-watch-min.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+    /* position: relative; */
+}
+
+.main-view h1 {
+    color: #ccc;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+/* .................SECTION-DISCOUNT.............
+........................................... */
+
+.discount {
+    background-color: rgb(247, 59, 59);
+    height: 15px;
+    padding: 10px;;
+}
+
+.discount p {
+    margin: 0;
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 80%;
+}
+
+/* .................SECTION-TREND.............
+........................................... */
+
+.section-trend {
+    background-color: white;
+}
+
+.trend-box img{
+    display: block;
+    height: 200px;
+    width: auto;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.trend-box a {
+    display: block;
+    margin: 0;
+    font-size: 80%;
+    font-weight: 300;
+    text-align: center;
+}
+
+.fulus {
+    display: block;
+    color: red;
+    text-align: center;
+}
+
+/* .................SECTION-MEN&WOMEN.............
+........................................... */
+
+.section-gender {
+    height: 300px;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url(menandwomen.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+
+.gender-box1 {
+    position: absolute;
+    top: 30%;
+    right: 15%;
+}
+
+.gender-box2 {
+    position: absolute;
+    top: 30%;
+    left: 15%;
+    
+}
+
+.gender-box1 h3,
+.gender-box2 h3 {
+    color: white;
+    text-transform: uppercase;
+    font-size: 160%;
+    letter-spacing: 2px;
+}
+
+.btn {
+    color: white;
+    width: 80%;
+    border: 1px solid white;
+    text-align: center;
+    padding: 10px;
+    transition: color 0.5s, background-color 0.5s;
+}
+
+.btn:hover,
+.btn:active {
+    color: black;
+    background-color: white;
+}
+
+/* .................SECTION-QUOTE.............
+........................................... */
+
+.section-quote {
+    color: #ddd;
+}
+
+.quote-box {
+    display: block;
+    padding: 50px 0;
+    margin: 0 auto;
+    color: black;
+}
+
+.quote-box h3 {
+    margin: 0 0 15px 0;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+}
+
+.quote-box p {
+    margin: 0 auto;
+    width: 40%;
+    border: 1px solid black;
+    padding: 15px;
+    font-weight: 300;
+}
+
+
+/* .................SECTION-MODELS.............
+........................................... */
+
+.section-models {
+    height: 400px;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.opacity {
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}
+
+.opacity:hover {opacity: 1;}
+
+.models-big1 {
+    float: left;
+    height: 100%;
+    width: 25%;
+    background-image: url(model1.jpg);
+    background-size: cover;
+    background-position: center; 
+    position: relative;
+}
+
+.models-small {
+    float: left;
+    height: 100%;
+    width: 25%; 
+}
+
+.models-small-1 {
+    height: 50%;
+    width: 100%;
+    background-image: url(model2-min.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+.models-small-2 {
+    height: 50%;
+    width: 100%;
+    background-image: url(model3-min.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.models-big2 {
+    float: left;
+    height: 100%;
+    width: 25%;
+    background-image: url(model4-min.jpg);
+    background-size: cover;
+    background-position: left; 
+    position: relative;
+}
+
+.models-big3 {
+    float: left;
+    height: 100%;
+    width: 25%;
+    background-image: url(model5-min.jpg);
+    background-size: cover;
+    background-position: left;
+    position: relative;
+}
+
+.Models-text {
+    color: white;
+    text-transform: uppercase;
+    position: absolute;
+    padding: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(51, 51, 51, 0.616);
+    border: 2px solid white;
+
+}
+
+/* .................SECTION-FEATURES.............
+........................................... */
+
+.section-features {
+    background-color: rgb(247, 59, 59);
+    padding: 10px 0 0 0;
+    color: white;
+}
+
+.features-box i {
+    font-size: 130%;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.features-box p {
+    display: inline-block;
+    vertical-align: 5px;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 70%;
+}
+
+/* .................SECTION-INPUTS.............
+........................................... */
+
+.section-inputs {
+    overflow: hidden;
+    padding: 0;
+}
+
+.sub-box {
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+}
+
+.sub-box h3 {
+    text-transform: uppercase;
+    font-weight: 300;
+    margin:30px 0;
+}
+
+.input-box input {
+    height: 35px;
+    width: 50%;
+    margin-bottom: 10px;
+}
+
+
+.input-box input[placeholder] {
+    font-size: 80%;
+    padding: 5px;
+}
+
+.submit-btn input{
+    letter-spacing: 1px;
+    padding: 7px;
+    margin: 10px 0 30px 0;
+    transition: border-color 0.5s, color 0.5s;
+}
+.submit-btn input:hover {border-color: #333; color: rgb(247, 59, 59)}
+
+/* .................FOOTER.............
+........................................... */
+
+footer {
+    background-color: #333;
+    color: white;
+}
+
+.center {
+    width: 40%;
+    margin: 0 auto;
+}    
+
+.footer-curren h3 {
+    text-transform: uppercase;
+    font-weight: 400;
+    color: rgb(247, 59, 59);
+    border: 1px solid white;
+    width: fit-content;
+    padding: 8px;
+    margin-bottom: 15px;
+    cursor: context-menu;
+}
+
+.footer-curren p {
+    text-transform: uppercase;
+    font-size: 80%;
+    font-weight: 300;
+    line-height: 25px;
+}
+
+.footer-box ul {
+    padding: 0;
+}
+
+.footer-box h4 {    
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.social-links {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-box ul li,
+.footer-box p {
+    font-weight: 300;
+    font-size: 80%;
+    margin-bottom: 5px;
+}
+
+.footer-box ul li {
+    border-bottom: 1px solid rgba(221, 221, 221, 0.2);
+    width: fit-content;
+    padding-bottom: 5px;
+    
+}
+
+.footer-box ul li:hover {
+    border-bottom: 1px solid red;
+    width: fit-content;
+}
+
+.fab {
+    font-size: 120%;
+    margin-right: 5px;
+    text-align: left;
+}
+
+.fa-facebook {color: #3b5999}
+.fa-twitter {color: #55acee}
+.fa-instagram {color: #e4405f}
+
