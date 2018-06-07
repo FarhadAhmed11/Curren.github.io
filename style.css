@@ -40,10 +40,11 @@ section {
 ........................................... */
 
 .main-view {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.37),rgba(0, 0, 0, 0.37)), url(main-watch-min.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.30),rgba(0, 0, 0, 0.30)), url(main-watch-min.jpg);
     background-attachment: fixed;
     height: 100vh;
     background-size: cover;
+    background-position: 0 50%;
 }
 
 .main-nav-bar {
@@ -113,6 +114,9 @@ section {
     background-color: rgb(247, 59, 59);
     height: 15px;
     padding: 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 9999;
 }
 
 .discount p {
@@ -128,6 +132,19 @@ section {
 
 .section-trend {
     background-color: white;
+}
+
+.trend-box > a { 
+    padding: 5px;
+    box-sizing: border-box;
+    border: 1px solid transparent; 
+    transition: border 0.5s
+}
+
+.trend-box > a:hover {
+    box-sizing: border-box;
+    border: 1px solid black;
+    box-shadow: #333;
 }
 
 .trend-box img{
@@ -240,13 +257,6 @@ section {
     background-color: black;
 }
 
-.opacity {
-    opacity: 0.8;
-    transition: opacity 0.5s;
-}
-
-.opacity:hover {opacity: 1;}
-
 .models-big1 {
     float: left;
     height: 100%;
@@ -312,14 +322,35 @@ section {
     transform: translate(-50%, -50%);
     background-color: rgba(51, 51, 51, 0.616);
     border: 2px solid white;
+    opacity: 0;
+    transition: all 0.5s;  
+}
 
+.opacity {
+    position: relative;
+}
+
+.overlay {
+    transition: all 0.5s;
+}
+
+.opacity:hover .overlay {
+    width:100%;
+    height:100%;
+    position:absolute;
+    background-color:#000;
+    opacity:0.5;
+}
+
+.opacity:hover .Models-text {
+    opacity: 1;
 }
 
 /* .................SECTION-FEATURES.............
 ........................................... */
 
 .section-features {
-    background-color: rgb(247, 59, 59);
+    background-color: black;
     padding: 10px 0 0 0;
     color: white;
 }
