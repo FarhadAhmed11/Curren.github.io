@@ -1,9 +1,13 @@
 /* .................GENERAL CODES.............
 ........................................... */
 
-html, body{
+* {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
     width: 100%;
     background-color: white;
     font-family: 'Roboto Condensed', sans-serif;
@@ -112,7 +116,6 @@ section {
 
 .discount {
     background-color: rgb(247, 59, 59);
-    height: 15px;
     padding: 10px;
     position: sticky;
     top: 0px;
@@ -199,11 +202,12 @@ section {
     text-transform: uppercase;
     font-size: 160%;
     letter-spacing: 2px;
+    margin-bottom: 1.2rem;
 }
 
 .btn {
     color: white;
-    width: 80%;
+    width: 100%;
     border: 1px solid white;
     text-align: center;
     padding: 10px;
@@ -214,6 +218,29 @@ section {
 .btn:active {
     color: black;
     background-color: white;
+}
+
+/* .................SECTION-FEATURES.............
+........................................... */
+
+.section-features {
+    background-color: black;
+    padding: 10px 0 0 0;
+    color: white;
+}
+
+.features-box i {
+    font-size: 130%;
+    padding: 0;
+    margin-right: 10px;
+}
+
+.features-box p {
+    display: inline-block;
+    vertical-align: 5px;
+    margin: 0;
+    text-transform: uppercase;
+    font-size: 70%;
 }
 
 /* .................SECTION-QUOTE.............
@@ -255,61 +282,69 @@ section {
     margin: 0;
     overflow: hidden;
     background-color: black;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }
 
 .models-big1 {
-    float: left;
     height: 100%;
-    width: 25%;
     background-image: url(model1.jpg);
     background-size: cover;
     background-position: center; 
     position: relative;
+    grid-column: 1 / 2;
+    grid-row: 1 / -1;
 }
 
-.models-small {
+/* .models-small {
     float: left;
     height: 100%;
     width: 25%; 
-}
+} */
 
 .models-small-1 {
-    height: 50%;
+    height: 100%;
     width: 100%;
     background-image: url(model2-min.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
-    
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
 }
 
 .models-small-2 {
-    height: 50%;
+    height: 100%;
     width: 100%;
     background-image: url(model3-min.jpg);
     background-size: cover;
     background-position: center;
     position: relative;
+    grid-column: 2 / 3;
+    grid-row: 2 / -1;
 }
 
 .models-big2 {
-    float: left;
     height: 100%;
-    width: 25%;
+    width: 100%;
     background-image: url(model4-min.jpg);
     background-size: cover;
     background-position: left; 
     position: relative;
+    grid-column: 3 / 4;
+    grid-row: 1 / -1;
 }
 
 .models-big3 {
-    float: left;
     height: 100%;
-    width: 25%;
+    width: 100%;
     background-image: url(model5-min.jpg);
     background-size: cover;
     background-position: left;
     position: relative;
+    grid-column: 4 / -1;
+    grid-row: 1 / -1;
 }
 
 .Models-text {
@@ -341,35 +376,13 @@ section {
     opacity:1;
 }
 
-/* .................SECTION-FEATURES.............
-........................................... */
-
-.section-features {
-    background-color: black;
-    padding: 10px 0 0 0;
-    color: white;
-}
-
-.features-box i {
-    font-size: 130%;
-    padding: 0;
-    margin-right: 10px;
-}
-
-.features-box p {
-    display: inline-block;
-    vertical-align: 5px;
-    margin: 0;
-    text-transform: uppercase;
-    font-size: 70%;
-}
 
 /* .................SECTION-INPUTS.............
 ........................................... */
 
 .section-inputs {
     overflow: hidden;
-    padding: 0;
+    padding: 20px 0;
 }
 
 .sub-box {
@@ -388,12 +401,12 @@ section {
     height: 35px;
     width: 50%;
     margin-bottom: 10px;
+    padding: 25px 18px;
 }
 
 
 .input-box input[placeholder] {
-    font-size: 80%;
-    padding: 5px;
+    font-size: 100%;
 }
 
 .submit-btn input{
@@ -410,6 +423,7 @@ section {
 footer {
     background-color: #333;
     color: white;
+    padding: 30px 0;
 }
 
 .center {
@@ -443,6 +457,7 @@ footer {
 .footer-box h4 {    
     text-transform: uppercase;
     font-weight: 400;
+    margin-bottom: 1.6rem;
 }
 
 .social-links {
